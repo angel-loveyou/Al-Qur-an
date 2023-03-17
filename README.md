@@ -28,9 +28,9 @@ Semoga bisa mengurangi dosa - dosa hamba
 <a href="https://heroku.com/deploy?template=https://github.com/angel-loveyou/Al-Qur-an"><img src="https://img.shields.io/badge/Al--Qur--an%20HEROKU-WOODcraft-brightgreen?style=badge&logo=heroku"width="310" height="50"/></a>
 </b>
 
-### TEMUKAN KAMI DI TELEGRAM
+### FIND US ON TELEGRAM
 
-<a href="https://t.me/kenkanasw"><img src="https://img.shields.io/badge/OWNER KAN-blue?style=for-the-badge&logo=Telegram" /></a>
+<a href="https://t.me/kenkanasw"><img src="https://img.shields.io/badge/OWNER%20-WOODcraft-brightgreen?style=for-the-badge&logo=Telegram" /></a>
 <a href="https://t.me/musikkugroup"><img src="https://img.shields.io/badge/SUPPORT GROUP-black?style=for-the-badge&logo=Telegram" /></a>
 <a href="https://t.me/musikkuchannel"><img src="https://img.shields.io/badge/SUPPORT CHANNEL-red?style=for-the-badge&logo=Telegram" /></a>
 <a href="http://t.me/BacaAlquranbot"><img src="https://img.shields.io/badge/AL-QUR'AN BOT-green?style=for-the-badge&logo=Telegram" /></a>
