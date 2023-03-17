@@ -1,5 +1,5 @@
 
-<p align="center"><img src="https://te.legra.ph/file/e9c87ad0b805862cd73a5.jpg" style="width:100%"></p>
+<p align="center"><img src="https://te.legra.ph/file/e9c87ad0b805862cd73a5.jpg" style="width:50%"></p>
 
 <p align="center">
   <a href="https://github.com/angel-loveyou/Al-Qur-an/fork">
