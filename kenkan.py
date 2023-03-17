@@ -1,7 +1,7 @@
 #!./venv/bin/python3.8
 import telebot
 from telebot import types
-import urllib3.request
+import urllib.request
 import time
 import json
 import os
@@ -21,7 +21,7 @@ headers={'User-Agent':user_agent,}
 
 request=urllib.request.Request(url,None,headers) #The assembled request
 response = urllib.request.urlopen(request)
-data = response.read() # The data u need
+data = response.read(j) # The data u need
 
 PAGES_URL = "http://mp3quran.net/api/quran_pages_arabic/"
 with open('./messages.json', 'r') as j:
@@ -54,7 +54,7 @@ def send_page(user_id, first_name, chat_id,
                         reply_to_message_id=message_id,reply_markup=markup if with_markup else None,
                             caption=messages.get('start') if is_start else None)
     else:
-        urllib3.request.urlretrieve(page_url, f"{page_number}.png")
+        urllib.request.urlretrieve(page_url, f"{page_number}.png")
         with open(f"{page_number}.png", 'rb') as page:
             BOT.edit_message_media(types.InputMediaPhoto(page), chat_id, message_id, 
                                         reply_markup=markup if with_markup else None)
