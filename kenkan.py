@@ -31,11 +31,11 @@ def send_page(user_id, first_name, chat_id,
     markup = types.InlineKeyboardMarkup()
     button = types.InlineKeyboardButton
     page_number, page_url= get_page(page_number, is_start)
-    next_button = button(text="▶️Berikutnya", callback_data=f"{page_number + 1} {user_id} {first_name}")\
+    next_button = button(text="▶️ Next", callback_data=f"{page_number + 1} {user_id} {first_name}")\
                     if with_markup else None
-    back_button = button(text="◀️Sebelumnya", callback_data=f"{page_number - 1} {user_id} {first_name}")\
+    back_button = button(text="◀️ Previously", callback_data=f"{page_number - 1} {user_id} {first_name}")\
                     if with_markup else None
-    start_button = button(text="Pembukaan Al-Qur'an🕋", callback_data=f"{1} {user_id} {first_name}")\
+    start_button = button(text="Opening Al-Qur'an🕋", callback_data=f"{1} {user_id} {first_name}")\
                     if with_markup else None
     buttons_list = [start_button] if is_start else [back_button, next_button]\
                     if with_markup else []
@@ -61,9 +61,9 @@ def open_page(text, user_id, first_name, chat_id,
             send_page(*user_info, 
                         page_number, send=True, with_markup=with_markup)
         else:
-            raise Exception("Jumlah halaman Al-Qur'an adalah 604")
+            raise Exception("Number of pages Al-Qur'an is 604")
     else:
-        raise Exception("Silakan masukkan nomor halaman Contoh:\n%s 10" % (' '.join(s_text[:2])))
+        raise Exception("Please enter Example page number:\n%s 10" % (' '.join(s_text[:2])))
 
 def get_info(ob):
     if ob.__class__ == types.Message:
@@ -91,16 +91,16 @@ def command_handler(message):
 def message_handler(message):
     text = str(message.text)
     user_info = get_info(message)
-    if text.startswith("/buka"):
+    if text.startswith("/open"):
         send_page(*user_info,
                     page_number=1, send=True)
-    elif text.startswith(('buka halaman', 'ambil halaman')):
+    elif text.startswith(('page open', 'take page')):
         try:
-            open_page(text, *user_info, with_markup= not text.startswith(('ambil halaman')))
+            open_page(text, *user_info, with_markup= not text.startswith(('take page')))
         except Exception as err:
             BOT.reply_to(message, err)
-    elif text in ['/repo']:
-        BOT.reply_to(message, "Kalau mau bikin bot sendiri kak nih reponya\nhttps://github.com/kenkannih/Al-Qur-an")
+    elif text in ['/wood']:
+        BOT.reply_to(message, "If you want to join the channel here is the channel link\nhttps://t.me/Opleech")
 
 @BOT.callback_query_handler(func=lambda call:True)
 def query_handler(call):
@@ -111,7 +111,7 @@ def query_handler(call):
         send_page(*user_info, 
                     int(page_number), is_start=False)
     else:
-        BOT.answer_callback_query(call.id, f"Al-Qur'an ini untuk {first_name}")
+        BOT.answer_callback_query(call.id, f"This Al-Qur'an is for {first_name}")
 
 
 while True:
