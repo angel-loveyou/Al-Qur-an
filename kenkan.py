@@ -15,7 +15,7 @@ error_img = "http://image.freepik.com/free-vector/error-neon-signs-style-text_11
 
 BOT = telebot.TeleBot(f"{TOKEN}")
 
-URL = "http://mp3quran.net/api/quran_pages_arabic/"
+url = "http://mp3quran.net/api/quran_pages_arabic/"
 request_site = Request(url, headers={"message": "Mozilla/5.0"})
 webpage = urlopen(request_site).read(j)
 print(webpage[:500])
