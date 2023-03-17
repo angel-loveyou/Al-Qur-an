@@ -1,7 +1,7 @@
 #!./venv/bin/python3.8
 import telebot
 from telebot import types
-import urllib.request
+import urllib3.request
 import time
 import json
 import os
@@ -14,7 +14,7 @@ error_img = "http://image.freepik.com/free-vector/error-neon-signs-style-text_11
 
 BOT = telebot.TeleBot(f"{TOKEN}")
 
-PAGES_URL = "https://mp3quran.net/api/quran_pages_arabic/"
+PAGES_URL = "http://mp3quran.net/api/quran_pages_arabic/"
 with open('./messages.json', 'r') as j:
     messages = json.load(j)
 
@@ -45,7 +45,7 @@ def send_page(user_id, first_name, chat_id,
                         reply_to_message_id=message_id,reply_markup=markup if with_markup else None,
                             caption=messages.get('start') if is_start else None)
     else:
-        urllib.request.urlretrieve(page_url, f"{page_number}.png")
+        urllib3.request.urlretrieve(page_url, f"{page_number}.png")
         with open(f"{page_number}.png", 'rb') as page:
             BOT.edit_message_media(types.InputMediaPhoto(page), chat_id, message_id, 
                                         reply_markup=markup if with_markup else None)
