@@ -14,15 +14,6 @@ error_img = "http://image.freepik.com/free-vector/error-neon-signs-style-text_11
 
 BOT = telebot.TeleBot(f"{TOKEN}")
 
-user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
-
-url = "http://mp3quran.net/api/quran_pages_arabic/"
-headers={'User-Agent':user_agent,} 
-
-request=urllib.request.Request(url,None,headers) #The assembled request
-response = urllib.request.urlopen(request)
-data = response.read(j) # The data u need
-
 PAGES_URL = "http://mp3quran.net/api/quran_pages_arabic/"
 with open('./messages.json', 'r') as j:
     messages = json.load(j)
