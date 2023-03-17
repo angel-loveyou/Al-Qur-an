@@ -1,13 +1,13 @@
 
-<p align="center"><img src="https://2.bp.blogspot.com/-eBu3-f3vzW0/V3E8UnYXsfI/AAAAAAAADHI/lJrPAoLSE70aO0F3W9fruZ8O-qJY76MSwCLcB/s1600/gambar-gerak-gif-chip-and-dale-terbaru.gif" style="width:100%"></p>
+<p align="center"><img src="https://te.legra.ph/file/e9c87ad0b805862cd73a5.jpg" style="width:100%"></p>
 
 <p align="center">
-  <a href="https://github.com/kenkannih/Al-Qur-an/fork">
-    <img src="https://img.shields.io/github/forks/kenkannih/Al-Qur-an?label=Fork&style=social">
+  <a href="https://github.com/angel-loveyou/Al-Qur-an/fork">
+    <img src="https://img.shields.io/github/forks/angel-loveyou/Al-Qur-an?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/kenkannih/Al-Qur-an">
-    <img src="https://img.shields.io/github/stars/kenkannih/Al-Qur-an?style=social">
+  <a href="https://github.com/angel-loveyou/Al-Qur-an">
+    <img src="https://img.shields.io/github/stars/angel-loveyou/Al-Qur-an?style=social">
   </a>
 </p>  
 
@@ -20,7 +20,7 @@
 🇺 🇸 🇦 🇭 🇦 🇮 🇳   🇰 🇦 🇸 🇮 🇭   
 🇧 🇮 🇳 🇹 🇦 🇳 🇬   🇾 🇦
 # Al-Qur'an
-Semoga bisa mengurangi dosa - dosa hamba
+Hopefully it can reduce dosa - servant's sin
 
 # DEPLOY
 
@@ -30,16 +30,16 @@ Semoga bisa mengurangi dosa - dosa hamba
 
 ### FIND US ON TELEGRAM
 
-<a href="https://t.me/kenkanasw"><img src="https://img.shields.io/badge/OWNER%20-WOODcraft-brightgreen?style=for-the-badge&logo=Telegram" /></a>
-<a href="https://t.me/musikkugroup"><img src="https://img.shields.io/badge/SUPPORT GROUP-black?style=for-the-badge&logo=Telegram" /></a>
-<a href="https://t.me/musikkuchannel"><img src="https://img.shields.io/badge/SUPPORT CHANNEL-red?style=for-the-badge&logo=Telegram" /></a>
-<a href="http://t.me/BacaAlquranbot"><img src="https://img.shields.io/badge/AL-QUR'AN BOT-green?style=for-the-badge&logo=Telegram" /></a>
+<a href="https://t.me/Farooq_is_KING"><img src="https://img.shields.io/badge/OWNER%20-WOODcraft-brightgreen?style=for-the-badge&logo=Telegram" /></a>
+<a href="https://t.me/WOODcraft_Mirror_Topic"><img src="https://img.shields.io/badge/SUPPORT GROUP-black?style=for-the-badge&logo=Telegram" /></a>
+<a href="https://t.me/Opleech"><img src="https://img.shields.io/badge/SUPPORT CHANNEL-red?style=for-the-badge&logo=Telegram" /></a>
+<a href="https://t.me/Al_Quran_v1_bot"><img src="https://img.shields.io/badge/AL-QUR'AN BOT-green?style=for-the-badge&logo=Telegram" /></a>
 
 
 
 ### CREDIT
 
-* [KEN KAN](https://github.com/kenkannih/Al-Qur-an) - Al-Qur-an
+* [Farooq Sheikh](https://t.me/Farooq_is_KING) - Al-Qur-an
 
 
 
