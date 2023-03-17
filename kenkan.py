@@ -17,7 +17,7 @@ BOT = telebot.TeleBot(f"{TOKEN}")
 
 URL = "http://mp3quran.net/api/quran_pages_arabic/"
 request_site = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-webpage = urlopen(request_site).read()
+webpage = urlopen(request_site).read(j)
 print(webpage[:500])
 with open('./messages.json', 'r') as j:
     messages = json.load(j)
