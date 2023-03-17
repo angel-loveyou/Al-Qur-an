@@ -1,7 +1,8 @@
 #!./venv/bin/python3.8
 import telebot
 from telebot import types
-import urllib.request
+from urllib import request
+from urllib.request import Request, urlopen
 import time
 import json
 import os
@@ -14,7 +15,10 @@ error_img = "http://image.freepik.com/free-vector/error-neon-signs-style-text_11
 
 BOT = telebot.TeleBot(f"{TOKEN}")
 
-PAGES_URL = "http://mp3quran.net/api/quran_pages_arabic/"
+url = "http://mp3quran.net/api/quran_pages_arabic/"
+request_site = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+webpage = urlopen(request_site).read()
+print(webpage[:500])
 with open('./messages.json', 'r') as j:
     messages = json.load(j)
 
@@ -22,15 +26,15 @@ with open('./messages.json', 'r') as j:
 def get_page(page_number, is_start):
     page_number = page_number if page_number > 1 and page_number < 604 else 604 if page_number < 1 else 1
     page_number = f"{'00' if page_number < 10 else '0' if page_number < 100 else ''}{page_number}"
-    page_url = None if is_start else f"{PAGES_URL}{page_number}.png"
-    return int(page_number), page_url
+    url = None if is_start else f"{URL}{page_number}.png"
+    return int(page_number), url
 
 def send_page(user_id, first_name, chat_id, 
                 message_id, page_number, is_start=False, 
                     send=False, with_markup=True):
     markup = types.InlineKeyboardMarkup()
     button = types.InlineKeyboardButton
-    page_number, page_url= get_page(page_number, is_start)
+    page_number, url= get_page(page_number, is_start)
     next_button = button(text="▶️ Next", callback_data=f"{page_number + 1} {user_id} {first_name}")\
                     if with_markup else None
     back_button = button(text="◀️ Previously", callback_data=f"{page_number - 1} {user_id} {first_name}")\
@@ -41,11 +45,11 @@ def send_page(user_id, first_name, chat_id,
                     if with_markup else []
     markup.add(*buttons_list)
     if is_start or send:
-        BOT.send_photo(chat_id, page_url if page_url else open('./img/start_img.jpg', 'rb'),
+        BOT.send_photo(chat_id, url if url else open('./img/start_img.jpg', 'rb'),
                         reply_to_message_id=message_id,reply_markup=markup if with_markup else None,
                             caption=messages.get('start') if is_start else None)
     else:
-        urllib.request.urlretrieve(page_url, f"{page_number}.png")
+        urllib.request.urlretrieve(url, f"{page_number}.png")
         with open(f"{page_number}.png", 'rb') as page:
             BOT.edit_message_media(types.InputMediaPhoto(page), chat_id, message_id, 
                                         reply_markup=markup if with_markup else None)
