@@ -14,7 +14,7 @@ error_img = "https://image.freepik.com/free-vector/error-neon-signs-style-text_1
 
 BOT = telebot.TeleBot(f"{TOKEN}")
 
-PAGES_URL = "http://mp3quran.net/api/quran_pages_arabic/"
+PAGES_URL = "https://mp3quran.net/api/quran_pages_arabic/"
 with open('./messages.json', 'r') as j:
     messages = json.load(j)
 
