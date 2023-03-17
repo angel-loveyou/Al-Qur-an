@@ -1,4 +1,4 @@
 {
-    "start":"Assalamu'alaikum\nSelamat datang di bot penjelajahan Quran.Bot ini adalah amal yang berkelanjutan untuk saya dan Anda.\nSaya harap Anda akan mempublikasikan bot\nUntuk melihat sumbernya, kirim /repo \nuntuk mengetahui perintah ketik /help",
-    "help":"Melalui bot ini Anda dapat membuka Al-Qur'an dengan mengirimkan:\n🌟 Perintah /buka \nDan Anda dapat membuka halaman tertentu dengan mengirimkan \n🌟 buka halaman <nomor halaman>\nDan Anda dapat mengambil halaman tertentu dengan mengirim \n🌟 ambil halaman <nomor halaman>"
+    "start":"Assalamu'alaikum\nWelcome to Quran browsing bot. This bot is an ongoing charity for me and you.\nI hope you will publish bot\nTo see the channel, submit /wood \to know the order type /help",
+    "help":"Through bot this you can unlock Al-Qur'and by sending:\n🌟 Order /open \nAnd you can go to a specific page by submitting \n🌟 page open <page number>\nAnd you can fetch specific pages by sending \n🌟 take page <page number>"
 }
