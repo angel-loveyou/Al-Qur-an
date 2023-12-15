@@ -10,5 +10,5 @@ chardet==5.2.0
 idna==3.6
 pyTelegramBotAPI==4.14.0
 requests==2.25.1
-urllib3==2.1.0
+urllib3==1.26.18
 
