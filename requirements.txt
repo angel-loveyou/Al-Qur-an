@@ -9,6 +9,6 @@ certifi==2023.7.22
 chardet==5.2.0
 idna==3.7
 pyTelegramBotAPI==4.16.1
-requests==2.25.1
+requests==2.32.2
 urllib3==2.2.1
 
